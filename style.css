@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-.container {
-
-}
-
 .sub-container-1 {
     background-color: #EBF1FF;
     display: flex;
