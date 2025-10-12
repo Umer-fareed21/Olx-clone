@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobile-cart-pic-1 {
+    height: 270px;
+    background-image: url(../photos/mob-1.webp);
+    background-size: cover;
+}
+
+.mobile-cart-pic-2 {
+    height: 270px;
+    background-image: url(../photos/mob-2.webp);
+    background-size: cover;
+}
+
+.mobile-cart-pic-3 {
+    height: 270px;
+    background-image: url(../photos/mob-3.webp);
+    background-size: cover;
+}
+
+.mobile-cart-pic-4 {
+    height: 270px;
+    background-image: url(../photos/mob-4.webp);
+    background-size: cover;
+}
+
+/* car-images */
+
+.car-cart-pic-1 {
+    height: 270px;
+    background-image: url(../photos/car-1.webp);
+    background-size: cover;
+}
+
+.car-cart-pic-2 {
+    height: 270px;
+    background-image: url(../photos/car-2.webp);
+    background-size: cover;
+}
+
+.car-cart-pic-3 {
+    height: 270px;
+    background-image: url(../photos/car-3.webp);
+    background-size: cover;
+}
+
+.car-cart-pic-4 {
+    height: 270px;
+    background-image: url(../photos/car-4.webp);
+    background-size: cover;
+}
+
+/* bike-sec */
+
+.bike-cart-pic-1 {
+    height: 270px;
+    background-image: url(../photos/bike-1.webp);
+    background-size: cover;
+}
+
+.bike-cart-pic-2 {
+    height: 270px;
+    background-image: url(../photos/bike-2.webp);
+    background-size: cover;
+}
+
+.bike-cart-pic-3 {
+    height: 270px;
+    background-image: url(../photos/bike-3.webp);
+    background-size: cover;
+}
+
+.bike-cart-pic-4 {
+    height: 270px;
+    background-image: url(../photos/bike-4.webp);
+    background-size: cover;
+}
+
+/* house */
+
+.house-cart-pic-1 {
+    height: 270px;
+    background-image: url(../photos/house-1.webp);
+    background-size: cover;
+}
+
+.house-cart-pic-2 {
+    height: 270px;
+    background-image: url(../photos/house-2.webp);
+    background-size: cover;
+}
+
+.house-cart-pic-3 {
+    height: 270px;
+    background-image: url(../photos/house-3.webp);
+    background-size: cover;
+}
+
+.house-cart-pic-4 {
+    height: 270px;
+    background-image: url(../photos/job-4.webp);
+    background-size: cover;
+}
+
+/* jobs */
+
+.job-cart-pic-1 {
+    height: 270px;
+    background-image: url(../photos/job-1.webp);
+    background-size: cover;
+}
+
+.job-cart-pic-2 {
+    height: 270px;
+    background-image: url(../photos/job-2.webp);
+    background-size: cover;
+}
+
+.job-cart-pic-3 {
+    height: 270px;
+    background-image: url(../photos/job-3.webp);
+    background-size: cover;
+}
+
+.job-cart-pic-4 {
+    height: 270px;
+    background-image: url(../photos/job-4.webp);
+    background-size: cover;
+}

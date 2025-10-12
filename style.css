@@ -1,150 +1,231 @@
+@import url(/styles/nav.css);
+@import url(/styles/top-main.css);
+@import url(/styles/cart-images.css);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.sub-container-1 {
-    background-color: #EBF1FF;
+.mobile-cart-section {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-top: 30px;
 }
 
-.sub-container-1-1 {
-    display: flex;
-    padding: 8px 0px 8px 0px;
+.heading-mob-cart-section {
     max-width: 1024px;
     width: 100%;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.left-side {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 20px;
+.heading-mob-cart-section li {
+    list-style: none;
 }
 
-.motors a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
+.heading-mob-cart-section li a {
     text-decoration: none;
-    flex-wrap: wrap;
-}
-
-.motors a img {
-    height: 24px;
-}
-
-.motors a p {
-    font-family: Geomanist, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: Helvetica, sans-serif;
     font-weight: 600;
-    color: #002f34;
-}
-
-.motors a p:hover {
+    margin-right: 10px;
     color: #3a77ff;
 }
 
-.property a {
+.heading-mob-cart-section h1 {
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+}
+
+.mobile-cart-text {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    text-decoration: none;
-    flex-wrap: wrap;
-}
-
-.property a p:hover {
-    color: #3a77ff;
-}
-
-.property a img {
-    height: 24px;
-}
-
-.property a p {
-    font-family: 'Geomanist', Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: #002f34;
-}
-
-._8113da19 {
-    height: auto;
-    width: 3rem;
-    fill: #3a77ff;
-}
-
-.logo {
-    background-color: #ffffff;
-    margin-bottom: -10px;
+    flex-direction: column;
+    max-width: 245px;
+    width: 100%;
     padding: 15px;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
 }
 
-.right-side {
+.mobile-cart-text-heading {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.right-side-button-2 {
+.mobile-cart-text-heading h2 {
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+.mobile-cart-text-heading svg {
+    width: 20px;
+}
+
+.mobile-cart-text-p {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mobile-cart-text-p p{
+    font-family: Helvetica, sans-serif;
+}
+
+.mob-cart {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    max-width: 1024px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 20px;
+}
+
+.mobile-cart-1 {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.whole-main-section-product {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
-.right-side-button-2 a {
+.mobile-cart-1 a{
+    text-decoration: none;
+    color: #002f34;
+}
+
+
+
+/******************************************* footer *********************************************/
+
+.footer-sec-1 {
     display: flex;
-    gap: 5px;
+    justify-content: center;
+}
+
+.section-1-foot {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    margin-top: 50px;
+}
+
+.foot-1-left-img img {
+    max-width: 188px;
+    width: 100%;
+}
+
+.foot-1-right-img {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
     align-items: center;
 }
 
-.right-side-button a{
-    text-decoration: none;
-    font-family: 'Geomanist', Helvetica, sans-serif;
-    font-weight: 900;
-    color: #002f34;
-    border-bottom: 2px solid #002f34;
+.foot-1-right-img img{
+    max-width: 128px;
+    width: 100%;
 }
 
-.right-side-button a:hover {
-    border: none;
-}
-
-.right-side-button-2 a {
-    text-decoration: none;
-}
-
-.right-side-button a button {
+.footer-sec-2 {
     display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.gradient-border-button {
-  /* Button content styling */
-    padding: 6px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
+.section-2-foot {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5% 7%;
+    flex-wrap: wrap;
+}
+
+.links-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links-1 p {
     font-family: 'Geomanist', Helvetica, sans-serif;
-    cursor: pointer;
-    
-    /* The key gradient border properties */
-    position: relative; /* Required for the pseudo-element method */
-    border-radius: 50em; /* Creates the pill shape */
-    border: 6px solid transparent; /* Creates the border space */
-    
-    /* The multi-color gradient */
-    background: 
-    linear-gradient(white, white) padding-box,
-    conic-gradient(from 360deg at 50% 50%, #17c8a3 0deg, #17c8a3 90deg, #ffc93c 90deg, #ffc93c 180deg, #4285f4 180deg, #4285f4 270deg, #17c8a3 270deg, #17c8a3 360deg) border-box;
+    color: #002f34;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.links-1 li {
+    list-style: none;
+}
+
+.links-1 li a {
+    text-decoration: none;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    color: #002f34;
+}
+
+.links-1 li a:hover {
+    color: #515d5f;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #002f34;
+}
+
+.social a:hover {
+    color: #515d5f;
+}
+
+.footer-sec-3 {
+    background-color: #002f34;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-3-foot {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.section-3-foot .text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3-foot .text span {
+    color: #ffffff;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.section-3-foot .text p {
+    color: #ffffff;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
 }

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sub-container-3-3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-container-3-3 ul{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.sub-container-3-3 ul li {
+    list-style: none;
+}
+
+.special-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.special-list svg {
+    width: 12%;
+}
+
+.sub-container-3-3 ul li a {
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    color: #002f34;
+}
+
+.sub-container-3-3 ul li a:hover {
+    color: #3a77ff;
+}
+
+.special-list a {
+    font-weight: 600;
+    color: #002f34;
+}
+
+.hero-banner {
+    padding: 30px;
+    text-align: center;
+}
+
+.hero-banner img {
+    max-width: 98%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-section-1 {
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-img img {
+    max-width: 88px;
+    width: 100%;
+}
+
+.section-1-img {
+    display: flex;
+    flex-direction: column;
+    max-width: 125px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-1-img p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+    .sub-container-3-3 ul li a{
+        font-size: 12px;
+    }
+
+    .sub-container-3-3 ul {
+        justify-content: center;
+    }
+
+    .heading-mob-cart-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .links-1 p {
+        font-size: 13px;
+    }
+
+    .links-1 li a {
+        font-size: 12px;
+    }
+
+    .section-2-foot {
+        gap: 30px;
+    }
+
+    .section-3-foot .text span {
+        font-size: 12px;
+    }
+
+    .section-3-foot .text p {
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .foot-1-right-img {
+        flex-wrap: wrap;
+    }
+}
