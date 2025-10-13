@@ -229,3 +229,38 @@
     letter-spacing: 1px;
     font-weight: 100;
 }
+
+/* back-to-top button */
+    .back-to-top {
+      position: fixed;
+      right: 10px;
+      bottom: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+      background: linear-gradient(180deg, #002f34);
+      color: white;
+      border: none;
+      cursor: pointer;
+      transform: translateY(12px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 220ms ease, transform 220ms ease;
+      z-index: 9999;
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .back-to-top:focus { outline: 3px solid rgba(37,99,235,0.28); }
+
+    /* small icon text */
+    .back-to-top svg { width:22px; height:22px; display:block; }
+    

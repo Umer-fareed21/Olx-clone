@@ -795,5 +795,62 @@
         </div>
     </footer>
 
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <!-- up arrow icon (SVG) -->
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+      <path d="M6 15l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script>
+    (function(){
+      const btn = document.getElementById('backToTop');
+      const showAfter = 200; // px scrolled before showing button — change as needed
+
+      // show/hide on scroll
+      function onScroll(){
+        if (window.scrollY > showAfter) {
+          btn.classList.add('show');
+        } else {
+          btn.classList.remove('show');
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      // initial check
+      onScroll();
+
+      // smooth scroll to top on click
+      btn.addEventListener('click', function(){
+        // Use smooth behavior if supported
+        if ('scrollBehavior' in document.documentElement.style) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          // fallback for very old browsers
+          let start = window.scrollY;
+          const duration = 450;
+          const startTime = performance.now();
+          function animate(time){
+            const elapsed = time - startTime;
+            const t = Math.min(1, elapsed / duration);
+            const ease = 1 - Math.pow(1 - t, 3); // easeOutCubic
+            window.scrollTo(0, Math.round(start * (1 - ease)));
+            if (t < 1) requestAnimationFrame(animate);
+          }
+          requestAnimationFrame(animate);
+        }
+      });
+
+      // keyboard accessibility: Enter or Space triggers button when focused
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          btn.click();
+        }
+      });
+
+      // Optional: hide when at top after page load if anchor used
+      window.addEventListener('load', onScroll);
+    })();
+  </script>
 </body>
 </html>
