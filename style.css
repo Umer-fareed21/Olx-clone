@@ -1,6 +1,7 @@
 @import url(/styles/nav.css);
 @import url(/styles/top-main.css);
 @import url(/styles/cart-images.css);
+@import url(/styles/media.css);
 
 * {
     margin: 0;
@@ -115,7 +116,6 @@
     justify-content: space-between;
     max-width: 1024px;
     width: 100%;
-    flex-wrap: wrap;
     padding: 0px 20px;
     margin-top: 50px;
 }
@@ -204,7 +204,7 @@
 
 .section-3-foot {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     max-width: 1024px;
     width: 100%;
 }
