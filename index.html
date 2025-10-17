@@ -53,7 +53,28 @@
 
             <div class="sub-container-2">
                 <div class="sub-container-2-2">
-                    <div class="left-input">
+                    <div class="olx-location">
+                        <div class="location-box" id="locationBox">
+                            <div class="icon">
+                            <img src="https://www.olx.com.pk/assets/iconLocationGradient_noinline.ec45db16ede268cd2719a09f0d10437f.svg" alt="Location">
+                            </div>
+                            <input type="text" placeholder="Location" value="Pakistan" readonly>
+                            <div class="arrow"></div>
+                        </div>
+
+                        <div class="dropdown" id="dropdownMenu">
+                            <input type="text" class="search-city" placeholder="Search city...">
+                            <ul>
+                            <li>Karachi</li>
+                            <li>Lahore</li>
+                            <li>Islamabad</li>
+                            <li>Faisalabad</li>
+                            <li>Rawalpindi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="left-input">
                         <div class="location-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2a7.008 7.008 0 0 0-7 7c0 5.353 6.036 11.45 6.293 11.707l.707.707.707-.707C12.964 20.45 19 14.353 19 9a7.008 7.008 0 0 0-7-7zm0 16.533C10.471 16.825 7 12.553 7 9a5 5 0 0 1 10 0c0 3.546-3.473 7.823-5 9.533z"/><path d="M12 6a3 3 0 1 0 3 3 3 3 0 0 0-3-3zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"/></svg>
                         </div>
@@ -61,11 +82,11 @@
                         <div class="input-1">
                             <input type="text" placeholder="Pakistan">
                         </div>
-
+            
                         <div class="arrow-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" class="_0f61da95" alt="Dropdown trigger"><path fill="currentColor" d="M85.4 277.33h60.32l366.34 366.34L878.4 277.33h60.33v60.33l-408.99 409h-35.3l-409.05-409z"></path></svg>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="right-input">
                         <div class="input-2">
@@ -853,5 +874,23 @@
       window.addEventListener('load', onScroll);
     })();
   </script>
+  <script>
+  const box = document.getElementById('locationBox');
+  const dropdown = document.getElementById('dropdownMenu');
+
+  box.addEventListener('click', () => {
+    box.classList.toggle('active');
+    dropdown.classList.toggle('active');
+  });
+
+  // Optional: close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!box.contains(e.target) && !dropdown.contains(e.target)) {
+      box.classList.remove('active');
+      dropdown.classList.remove('active');
+    }
+  });
+</script>
+
 </body>
 </html>

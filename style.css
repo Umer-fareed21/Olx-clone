@@ -9,6 +9,109 @@
     box-sizing: border-box;
 }
 
+.olx-location {
+  position: relative;
+  width: 260px;
+}
+
+.location-box {
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.location-box:hover {
+  border-color: #23e5db;
+  box-shadow: 0 0 6px rgba(35, 229, 219, 0.4);
+}
+
+.icon img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.location-box input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #333;
+  flex: 1;
+  background: transparent;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.dropdown {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown .search-city {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.dropdown ul li {
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown ul li:hover {
+  background: #f2f2f2;
+}
+
+/* Arrow rotation on open */
+.location-box.active .arrow {
+  transform: rotate(-135deg);
+}
+
 .mobile-cart-section {
     display: flex;
     justify-content: center;
@@ -263,4 +366,55 @@
 
     /* small icon text */
     .back-to-top svg { width:22px; height:22px; display:block; }
-    
+
+
+
+
+    .dropdown-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when active */
+.dropdown-btn.active .arrow {
+  transform: rotate(-135deg);
+}
+
+/* Dropdown menu with background */
+.dropdown-menu {
+  display: none;
+  margin-top: 6px;
+  background: #f9f9f9;      /* 👈 dropdown ka background */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  min-width: 160px;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background: #e9e9e9;      /* hover par halka sa grey */
+}
