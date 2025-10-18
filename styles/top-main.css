@@ -99,6 +99,11 @@ main {
     gap: 8px;
 }
 
+.section-1-img a {
+    text-decoration: none;
+    color: #002f34;
+}
+
 .section-1-img p {
     font-family: Helvetica, sans-serif;
     font-weight: 600;
