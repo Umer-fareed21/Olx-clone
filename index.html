@@ -846,13 +846,13 @@
     </footer>
 
     <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
-    <!-- up arrow icon (SVG) -->
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-      <path d="M6 15l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </button>
+        <!-- up arrow icon (SVG) -->
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+        <path d="M6 15l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
 
-  <script>
+    <script>
     (function(){
       const btn = document.getElementById('backToTop');
       const showAfter = 200; // px scrolled before showing button — change as needed
@@ -901,24 +901,25 @@
       // Optional: hide when at top after page load if anchor used
       window.addEventListener('load', onScroll);
     })();
-  </script>
-  <script>
-  const box = document.getElementById('locationBox');
-  const dropdown = document.getElementById('dropdownMenu');
+    </script>
 
-  box.addEventListener('click', () => {
-    box.classList.toggle('active');
-    dropdown.classList.toggle('active');
-  });
+    <script>
+        const box = document.getElementById('locationBox');
+        const dropdown = document.getElementById('dropdownMenu');
 
-  // Optional: close dropdown when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!box.contains(e.target) && !dropdown.contains(e.target)) {
-      box.classList.remove('active');
-      dropdown.classList.remove('active');
-    }
-  });
-</script>
+        box.addEventListener('click', () => {
+            box.classList.toggle('active');
+            dropdown.classList.toggle('active');
+        });
+
+        // Optional: close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!box.contains(e.target) && !dropdown.contains(e.target)) {
+            box.classList.remove('active');
+            dropdown.classList.remove('active');
+            }
+        });
+    </script>
 
 </body>
 </html>

@@ -1,4 +1,5 @@
 @import url(mediaqueuery.css);
+@import url(../styles/media.css);
 
 * {
     margin: 0;
@@ -906,6 +907,130 @@ main {
     height: 20px;
 }
 
+.footer-sec-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.section-1-foot {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 50px;
+}
+
+.foot-1-left-img img {
+    max-width: 188px;
+    width: 100%;
+}
+
+.foot-1-right-img {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-1-right-img img{
+    max-width: 128px;
+    width: 100%;
+}
+
+.footer-sec-2 {
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.section-2-foot {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5% 7%;
+    flex-wrap: wrap;
+}
+
+.links-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links-1 p {
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    color: #002f34;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.links-1 li {
+    list-style: none;
+}
+
+.links-1 li a {
+    text-decoration: none;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    color: #002f34;
+}
+
+.links-1 li a:hover {
+    color: #515d5f;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #002f34;
+}
+
+.social a:hover {
+    color: #515d5f;
+}
+
+.footer-sec-3 {
+    background-color: #002f34;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-3-foot {
+    display: flex;
+    justify-content: center;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.section-3-foot .text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3-foot .text span {
+    color: #ffffff;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.section-3-foot .text p {
+    color: #ffffff;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
 
 
 /* ✅ Full mobile responsive adjustments */
@@ -1118,3 +1243,87 @@ main {
     }
 }
 
+.back-to-top {
+      position: fixed;
+      right: 10px;
+      bottom: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+      background: linear-gradient(180deg, #002f34);
+      color: white;
+      border: none;
+      cursor: pointer;
+      transform: translateY(12px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 220ms ease, transform 220ms ease;
+      z-index: 9999;
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .back-to-top:focus { outline: 3px solid rgba(37,99,235,0.28); }
+
+    /* small icon text */
+    .back-to-top svg { width:22px; height:22px; display:block; }
+
+
+
+
+    .dropdown-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when active */
+.dropdown-btn.active .arrow {
+  transform: rotate(-135deg);
+}
+
+/* Dropdown menu with background */
+.dropdown-menu {
+  display: none;
+  margin-top: 6px;
+  background: #f9f9f9;      /* 👈 dropdown ka background */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  min-width: 160px;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background: #e9e9e9;      /* hover par halka sa grey */
+}
