@@ -439,7 +439,7 @@ main {
 }
 
 .mob-img {
-    width: 60%;
+    width: 100%;
     height: 380px;
     max-height: 100%;
     background-image: url(../mobile-section/mob-pics/1.webp);
@@ -453,7 +453,6 @@ main {
 .owner-detail {
     display: flex;
     flex-direction: column;
-    max-width: 40%;
     width: 100%;
     height: 380px;
     margin-left: 30px;
@@ -634,4 +633,350 @@ main {
     color: #002f34;
     font-family: 'Geomanist', Helvetica, sans-serif;
     font-weight: bold;
+}
+
+/*********************************** main-3 *******************************/
+
+.main-3 {
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-detais {
+    display: flex;
+    flex-direction: column;
+    max-width: 590px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.mob-prize {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mob-prize h1 {
+    color: #002f34;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.svgs svg:first-child {
+    width: 24px;
+    height: 24px;
+}
+
+.model-info {
+    margin-top: 10px;
+}
+
+.model-info p{
+    color: #002f34;
+    font-size: 20px;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.address svg {
+    width: 16px;
+    fill: #3a77ff;
+}
+
+.address p {
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    color: #002f34;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.time p {
+    color: #002f34;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.model-details {
+    display: flex;
+    flex-direction: column;
+    max-width: 590px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.model-details .heading h1{
+    color: #002f34;
+    font-size: 24px;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.model-contant {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.model-contant .brand {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.model-contant .model {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.model-contant .condition {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.brand p:first-child {
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #002f34;
+    padding: 10px 50px 10px 15px;
+    background-color: #f2f4f5;
+}
+
+.model p:first-child {
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #002f34;
+    padding: 10px 50px 10px 15px;
+    background-color: #f2f4f5;
+}
+
+.condition p:first-child {
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #002f34;
+    padding: 10px 50px 10px 15px;
+    background-color: #f2f4f5;
+}
+
+.brand p:last-child {
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #002f34;
+    padding: 10px 60px 10px 15px;
+    background-color: #fafbfb;
+}
+
+.model p:last-child {
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #002f34;
+    padding: 10px 60px 10px 15px;
+    background-color: #fafbfb;
+}
+
+.condition p:last-child {
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #002f34;
+    padding: 10px 60px 10px 15px;
+    background-color: #fafbfb;
+}
+
+.mob-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    max-width: 590px;
+    width: 100%;
+}
+
+.mob-description h1 {
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    color: #002f34;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.mob-description p {
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    color: #002f34;
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.safty-discription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    max-width: 550px;
+    width: 100%;
+}
+
+.safty-discription h1{
+     font-family: 'Geomanist', Helvetica, sans-serif;
+    color: #002f34;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.safty-discription li {
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    color: #002f34;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.footer-sec-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.section-1-foot {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 50px;
+}
+
+.foot-1-left-img img {
+    max-width: 188px;
+    width: 100%;
+}
+
+.foot-1-right-img {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-1-right-img img{
+    max-width: 128px;
+    width: 100%;
+}
+
+.footer-sec-2 {
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.section-2-foot {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5% 7%;
+    flex-wrap: wrap;
+}
+
+.links-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links-1 p {
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    color: #002f34;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.links-1 li {
+    list-style: none;
+}
+
+.links-1 li a {
+    text-decoration: none;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    color: #002f34;
+}
+
+.links-1 li a:hover {
+    color: #515d5f;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #002f34;
+}
+
+.social a:hover {
+    color: #515d5f;
+}
+
+.footer-sec-3 {
+    background-color: #002f34;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-3-foot {
+    display: flex;
+    justify-content: center;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.section-3-foot .text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3-foot .text span {
+    color: #ffffff;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.section-3-foot .text p {
+    color: #ffffff;
+    font-family: 'Geomanist', Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
 }
